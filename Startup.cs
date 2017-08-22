@@ -71,9 +71,6 @@ namespace RazorPageLocalizationIssue
                     name: "default",
                     template: "{controller}/{action=Index}/{id?}");
             });
-
-            var localizationOptions = app.ApplicationServices.GetRequiredService<IOptions<RequestLocalizationOptions>>();
-            app.UseRequestLocalization(localizationOptions.Value);
         }
     }
 }
